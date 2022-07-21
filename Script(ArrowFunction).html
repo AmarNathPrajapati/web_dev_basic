@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Fuctions</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="arrow">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, laudantium, temporibus, corporis rerum fuga reiciendis dicta deleniti minima doloribus quo neque. Temporibus molestiae assumenda, odit, ducimus velit commodi vitae ipsa repellat incidunt fugiat nobis obcaecati qui exercitationem iste nisi animi enim similique inventore, sequi iure dolore aliquid tempore! Fugiat neque exercitationem, beatae blanditiis ducimus ipsum?</p>
+        </h1>
+    </div>
+    <script>
+        let name=" Pramod"
+        // function greet()
+        // {
+        //     console.log("Good Nigth "+name)
+        // }
+        // greet=()=>
+        // {
+        //     console.log("Good Nigth "+name)
+        // }
+        // greet();
+        // setTimeout(() => {
+        // console.log("Good Nigth "+name)  
+        // },5000);
+        // let sum=(a,b)=>a+b;
+        // let behalf=a=>a/2;
+
+        let obj1={
+            greeting:"Good Morning",
+            names:["Amar"," Saurabh"," Pramod"," Shivam"],
+            speak()
+            {
+                this.names.forEach((element) => {
+                    console.log(this.greeting+"Good NIgth "+element)                   
+                });
+            }
+        }
+        
+        let obj1={
+            greeting:"Good Morning",
+            names:["Amar"," Saurabh"," Pramod"," Shivam"],
+            speak()
+            {
+                this.names.forEach(function s (element){
+                    console.log(this.greeting+"Good NIgth "+element)                   
+                });
+            }
+        }
+        obj1.speak()
+    </script>
+</body>
+</html>

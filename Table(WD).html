@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table(WD)</title>
+    <style>
+        .container{
+           margin-left:500px;
+        }
+        .container::before{
+            background: url('https://source.unsplash.com/user/erondu/1600x900');
+            content: "";
+            z-index: -1;
+            
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 500px;
+            font-size: 20px;
+            padding:12px;
+        } 
+        h1{
+            margin-left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>HTML form</h1>
+    <!-- form's attributes are action,method and enctype -->
+    <form action="">
+        Name: <input type="text">
+        Father Name: <input type="text">
+        Mother Name: <input type="text">
+        Address: <input type="text">
+        Email: <input type="text">
+        Mobile No.: <input type="number">
+        Comment:<textarea name="" id="" cols="25" rows="10" fi></textarea>
+        <div>Gender: <input type="radio" name="gender"> Male
+         <input type="radio" name="gender"> Female
+         <input type="radio" name="gender"> Other</div>
+         <div>Are you aligible: <input type="checkbox" name="add" id=""></div>
+         <input type="submit" name="submit" id="submit">
+         <input type="reset">
+
+    </form>
+</div>
+</body>
+</html>

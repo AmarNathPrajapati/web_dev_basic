@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Forms</title>
+</head>
+<body style="background-color: blueviolet;">
+    <center>
+        <div style="background-color: #85fb97">
+            <h2>Scholarship Form</h2>
+            <table>
+      <tr>
+        <form action="">
+            First Name:<input type="text"><br><br>
+            last Name:<input type="text"><br><br>
+            Father's Name:<input type="text"><br><br>
+            Address: <textarea name="address" cols="20" rows="1"textarea><br><br>
+            Mobile No.:<input type="number"><br><br>
+            Email.id: <input type="email"><br><br>
+            Institute Emaid Password:<input type="password"><br><br>
+            Institute Name:<input type="text"><br><br>
+          Are you eligible:<input type="checkbname="eligibility"><br><br>
+          Gender <input type="radio" name="gender">male
+          <input type="radio" name="gender">female
+          <input type="radio" name="gender">other <br><br>
+          Select Category
+          <label for="category">
+          <select name="category">
+                  <option value="General">General</option>
+                <option value="OBC">OBC</option>
+                <option value="SC">SC</option>
+                 <option value="ST">ST</option>
+               </select> </label><br><br>
+          Family's Income
+         <label for="inconme">
+             <select name="income" id="income">
+                  <option value="a">Below 2 lacs</option>
+                <option value="b">Between 2 to 5 lacs</option>
+                <option value="c">Above 5 lacs</option>
+            </select>
+         </label><br><br>
+         Where are you from:
+         <select name="" id="">
+             <optgroup label="Asia">
+                <option value="">India</option>
+                 <option value="">Pac</option>
+                <option value="">China</option>
+            </optgroup>
+             <optgroup label="Europe">
+                <option value="">germany</option>
+                <option value="">France</option>
+                <option value="">Italy</option>
+                <option value="">United Kingdom</option>
+            </optgroup>
+        </select><br><br>
+         Write your interest
+        <input list="interest">
+        <datalist id="interest">
+            <option value="Cricket"></option>
+            <option value="Innovative Farmin"></option>
+            <option value="Indoor game"></option>
+        </datalist><br><br>
+        Upload Required Document:<input type="file" nameid="">
+        <br><br>
+        <button>submit</button>
+        <button>reset</button>
+         </form>
+    </tr>
+</table>
+</div>
+</center>
+</body>
+
+</html>

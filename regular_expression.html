@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regular expression</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="" id="uname" placeholder="Username">
+        <button type="button" onclick="validate()" >Submit</button>
+    </form>
+    <script>
+        // function validate(){
+        //     let username= document.getElementById("uname").value;
+        //     let reg=/^[A-Za-z]+$/;
+        //     if(reg.test(username))
+        //     {
+        //         alert("valid username");
+        //     }
+        //     else
+        //     {
+        //         alert("invalid username");
+        //     }
+        // }
+        // let str = "Amarnath Prajapati";
+        // let b =str.search(/nath/i);
+        // document.write(b);
+        // let r =str.replace(/Amarnath/i,"Chandan");
+        // document.write(r);
+        // let str1="is this all there is?"
+        // let patt=/[h]/i;
+        // let c= str1.match(patt);
+        // document.write(c);
+        let str1="re,gree,green ,red ,blue ,yellow,red ,white";
+        let patt=/(green|red)/g;
+        let c= str1.match(patt);
+        document.write(c);
+    </script>
+</body>
+</html>

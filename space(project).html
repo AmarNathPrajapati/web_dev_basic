@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space's Project</title>
+    <style>
+        .navbar1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            height: 50px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            margin: 20px;
+            font-size: 20px;
+            color: white;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: 500px 200px 200px 350px 100px 100px;
+        }
+
+        #box1 {
+            background-image:url('https://image.shutterstock.com/image-photo/space-shuttle-near-earth-clouds-600w-1230117850.jpg');
+            background-size: 500px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+
+        }
+
+        #box2 {
+            background-color: blueviolet;
+            display: grid;
+            grid-template-columns:repeat(6,auto);
+
+        }
+
+        #box3 {
+            background-color: coral;
+        }
+
+        #box4 {
+            background-color: rgb(187, 91, 235);
+        }
+
+        #box5 {
+            background-color: rgb(223, 103, 103);
+        }
+
+        #box6 {
+            background-color: rgb(32, 218, 131);
+        }
+        #box2-1{
+            background-color:rgb(245, 163, 204) ;
+            display: none;
+        }
+        #box2-2{
+            background-color: indianred;
+        }
+        #box2-3{
+            background-color: khaki;
+        }
+        #box2-4{
+            background-color:limegreen ;
+        }
+        #box2-5{
+            background-color:rgb(98, 192, 184) ;
+        }
+        #box2-6{
+            background-color:rgb(125, 78, 156) ;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar1">
+            <div class="navbar" id="nav1"><a href="">Home</a></div>
+            <div class="navbar" id="nav2"><a href="">About</a></div>
+            <div class="navbar" id="nav3"><a href="">Project</a></div>
+            <div class="navbar" id="nav4"><a href="">Blogs</a></div>
+            <div class="navbar" id="nav5"><a href="">Contact Us</a></div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="box" id="box1">Lorem ipsum dolor sit.</div>
+        <div class="box" id="box2">
+            <div class="box2a" id="box2-1">Lorem, ipsum dolor.</div>
+            <div class="box2a" id="box2-2">Lorem, ipsum dolor.</div>
+            <div class="box2a" id="box2-3">Lorem, ipsum dolor.</div>
+            <div class="box2a" id="box2-4">Lorem, ipsum dolor.</div>
+            <div class="box2a" id="box2-5">Lorem, ipsum dolor.</div>
+            <div class="box2a" id="box2-6">Lorem, ipsum dolor.</div>
+        </div>
+        <div class="box" id="box3">Lorem ipsum dolor sit.</div>
+        <div class="box" id="box4">Lorem ipsum dolor sit.</div>
+        <div class="box" id="box5">Lorem ipsum dolor sit.</div>
+        <div class="box" id="box6">Lorem ipsum dolor sit.</div>
+    </div>
+
+</body>
+
+</html>

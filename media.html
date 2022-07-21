@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        .heading{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 50px;
+            display:none;
+        }
+        @media only screen and (max-width:500px){
+            #head1{
+                display: block;
+            }
+        }
+        @media(min-width:500px) and (max-width:800px){
+            #head2{
+                display: block;
+                color:white;
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+        <div class="heading" id="head1">this is a iphone's screen </div>
+        <div class="heading" id="head2">this is a tablet's screen</div>
+        <div class="heading" id="head3">this is a desktop computer's screen</div>
+        <div class="heading" id="head4">this is a wide screen's screen</div>
+</body>
+</html>

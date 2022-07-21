@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+    <style>
+        .navbar{
+            background-color: black;
+            border-radius: 20px;
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin:17px;  
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li :hover{
+            color:chartreuse;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color:white;
+        }
+        .search{
+         float: right;
+         margin: 17px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">contact us</a></li>
+                <li><a href="">About us</a></li>
+                <div><input type="text" class="search"placeholder="Search" ></div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and animation</title>
+    <style>
+        .box{
+            width: 100vw;
+            height: 100vh;
+            background-color: blueviolet;
+            /* animation necessary property */
+
+            /* animation-name: Amar1;
+            animation-duration:3s;
+            animation-iteration-count: 1; */
+
+            /* animation special property */
+
+            /* animation-delay: 3s; */
+            /* animation-direction: reverse; */
+            /* animation-timing-function: ease-in;
+            animation-timing-function: ease-out; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-fill-mode: forwards; */
+
+            /* amination short hand property */
+
+            /* animation : name duration timingfunction delay iterationcount fillmode */
+            animation:Amar2 2s 5;
+        }
+        @keyframes Amar2{
+            10%{
+                background-color: khaki;
+            }
+            25%{
+                background-color: lightcoral;
+            }
+            50%{
+                background-color: lightgreen;
+            }
+            75%{
+                background-color: palevioletred;
+            }
+            90%{
+                background-color: purple;
+            }
+            100%{
+                background-color: yellow;
+            }
+        }
+/* how to declare animation variables */
+
+        @keyframes Amar1{
+            from{
+                width: 200px;
+            }
+            to{
+                width: 1500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+</body>
+</html>

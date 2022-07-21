@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP end sem exam</title>
+    <style>
+        h1{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="click">Click here</h1>
+    <input type="button" value="click Me"id="butt" onclick="myfunc()">
+    <script>
+        // function myfunc()
+        // {
+        //     alert("no error occured")
+        // }
+        // window.onerror=function func(msg,url,line) {
+        //     alert(msg);
+        //     alert(url)
+        //     alert(line)
+        // }
+        // function myfunc() {
+        //     let a = 100
+        //     let b = 0
+        //     try {
+        //         if (b == 0) {
+        //             throw ("You can't divide by zero")
+        //         }
+        //         else {
+        //             c = a / b;
+        //             document.write(c)
+        //         }
+        //     }
+        //     catch(e){
+        //         alert("Error:"+e);
+        //     }
+
+        // }
+        // function myfunc() {
+        //     let a = 100
+            
+        //     try { 
+        //         let s=a.touppercase();
+        //         alert("the value of variable a is :" + a)
+        //      }
+        //     catch (e) {
+        //         alert("Error:" + e);
+        //     }
+        //     finally{
+        //         alert("statement is finally is always run");
+        //     }
+        // }
+
+        function thanks(){
+            alert("thanks")
+        }
+        // butt.onclick=function(){
+        //     thanks();
+        // }
+        let h=document.getElementById("click")
+        h.addEventListener("click",thanks)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating Dom</title>
+    <style>
+        body{
+            background-color: black;
+            color:white;
+            font-size: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main" class="container">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+            <li>More About Us</li>
+            
+        </ul>
+        
+        <form action="">
+            <input type="button" value="click for Dynamic change by Id" onclick="npage()"></button>
+        </form>
+        <form action="">
+            <input type="button" value="click for Dynamic change by Tag" onclick="nnpage()"></button>
+        </form>
+    </div>
+    <script>
+        function npage() {
+            let a = document.getElementById('main')
+            a.innerHTML = "<li>Dynamic change by Id </li><li>Dynamic Services</li><li>Dynamic Process</li><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus quod qui expedita omnis aspernatur officia voluptas modi, asperiores in ad praesentium accusantium nihil perferendis odit nisi possimus consectetur facere cum assumenda dolorum eos repellat? Ipsa deleniti accusantium voluptatibus impedit ex. Provident, similique hic! Sed nam, incidunt tempore iste culpa esse eos quidem aut ipsa</p>"
+           document.getElementById('main').style.color="blue";
+           document.getElementById('main').style.fontSize="25px";
+           document.getElementById('main').style.backgroundColor="yellow";
+           document.getElementById('main').style.height="400px";
+        }
+        function nnpage() {
+            document.getElementsByTagName("li")[0].innerHTML="<li>About</li>"
+            document.getElementsByTagName("li")[1].innerHTML="<l1>My Name is Amar Nath Prajapati</li>"
+            document.getElementsByTagName("li")[2].innerHTML="<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, mollitia porro, saepe aperiam doloribus reiciendis laudantium dolor facilis dolore quia quisquam esse ab optio voluptatibus quasi illum. Obcaecati perspiciatis adipisci cupiditate tempore placeat voluptatem nostrum nulla soluta iste veritatis laboriosam est voluptatibus temporibus, dicta possimus asperiores? Doloribus amet blanditiis sequi quo repellat ullam ex velit assumenda quam delectus accusantium libero sit nemo omnis temporibus repellendus fuga facilis, et ratione? Quae fugiat cum similique suscipit maiores nesciunt itaque sequi, distinctio labore, deserunt laudantium, ab ex. Ex a ipsa consequuntur voluptate dignissimos. Perspiciatis, optio quos! Repellendus, magnam quibusdam velit in quo consectetur?</p>"
+            document.getElementsByTagName("li")[3].innerHTML="<li>More About Us</li>"   
+        }
+    </script>
+</body>
+</html>

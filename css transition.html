@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transition</title>
+    <style>
+       #box{
+
+           height: 200px;
+           width:200px;
+           background-color: blue;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           /* transition-property: background-color;
+           transition-duration: 2s;
+           /* transition-timing-function: ease-in-out; */
+           /* transition-delay: 2s; */ 
+           transition:background-color 2s ease-in-out 2ms;
+       }
+       #box:hover{
+           background-color: yellow;
+           height: 400px;
+           width: 400px;
+           border-radius: 100px;
+           font-size: 2em;
+           
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box">
+            Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+</body>
+</html>

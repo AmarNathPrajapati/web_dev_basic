@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Position</title>
+</head>
+<style>
+    .container{
+        height: 1500px;
+        background-color: rgb(112, 234, 243);
+    }
+    .box{
+        display: inline-block;
+        background-color: rgb(248, 204, 154);
+        width: 100px;
+        height: 100px;
+        border:solid 3px rgb(4, 0, 252)
+    }
+    #box3{
+        /* position: absolute;
+        top: 20px;
+        right: 52px; */
+        /* position:static; No effect
+        top: 23px; */
+        /* position:relative;
+        top: 23px;
+        left: 40px; */
+        /* position:fixed;
+        bottom:12px;
+        right:12px; */
+        position:sticky;
+        top:50px;
+    }
+</style>
+<body>
+    <div class="container">
+        <p id="box1" class="box">1</p>
+        <p id="box2" class="box">2</p>
+        <p id="box3" class="box">3</p>
+        <p id="box4" class="box">4</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    text-decoration: rgb(75, 238, 138);
+    background-color: aqua;
+}
+ul>li{
+    background-color: turquoise;
+}
+/* universal selector */
+*{
+    background-color: black;
+    color:white;
+}
+ul ol{
+    background-color: blueviolet;
+}
+a:active{
+    color:coral;
+}

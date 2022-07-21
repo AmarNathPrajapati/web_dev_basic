@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psudo selector and more designing</title>
+    <style>
+        a:hover{
+            background-color: aqua;
+        }
+        .btn:hover{
+            background-color: aqua;
+        }
+        a:active{
+            color: blueviolet;
+            background-color: pink;
+        }
+        a:visited{
+            color: palegoldenrod;
+        }
+        a{
+           text-decoration: none; 
+           color:black;
+           background-color: rgb(245, 196, 154);
+           padding:5px;
+           border:black solid 1px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        .btn{
+            background-color: rgb(245, 196, 154);
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        .container{
+            background-color: springgreen;
+            border:solid 3px rgb(212, 0, 255);
+            width:45%;
+            padding: 12px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Lorem ipsum dolor sit</h2>
+        <p class="para" id="para1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eos similique eius adipisci iure architecto, ducimus dolores eum perferendis minus repellendus iste ea odio modi reprehenderit! Quasi deserunt eligendi adipisci? Distinctio tempora repellendus deleniti.<br>
+            <a href="https://google.com">read more</a>
+            <button class="btn">contact us</button>
+        </p>
+    </div>
+
+</body>
+</html>

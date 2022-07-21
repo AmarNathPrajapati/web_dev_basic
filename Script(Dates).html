@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dates and Times</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="date">this is the h1 heading</h1>
+    </div>
+    <script>
+        let now = new Date();
+        console.log(now)
+        let dt= new Date(1000);
+        console.log(dt)
+        let anydate= new Date("2021-06-15");
+        console.log(anydate)
+        let yr=anydate.getFullYear()
+        console.log("the year is now",yr);
+        let year=anydate.getFullYear()
+        console.log("the year is now",year);
+        let month=anydate.getMonth()
+        console.log("the month is now",month+1);
+        let date=anydate.getDate()
+        console.log("the date is now",date);
+        anydate.setDate(39)
+        console.log(anydate)
+        anydate.setMinutes(29)
+        console.log(anydate)
+        function show()
+        {let showdate=document.getElementById("date")
+        showdate.innerHTML=new Date();
+        }
+        setInterval(show,1000);
+    </script>
+</body>
+</html>

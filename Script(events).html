@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Events</title>
+    <style>
+        #btn{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #btn:hover{
+            background-color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>this is h1 heading   </h1>
+            <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloremque ab necessitatibus aspernatur eos, fugit accusantium dolor obcaecati asperiores officiis eaque excepturi numquam quae tempore, molestiae optio, sed mollitia culpa minima labore! Sapiente voluptatum ducimus quibusdam, eos, dolore earum cupiditate laborum neque, aperiam ad nisi vitae. Earum magnam provident officia, pariatur tenetur corrupti nesciunt atque suscipit, nihil soluta omnis rem ratione culpa error eum, eius id inventore nobis iste dolor alias saepe. Expedita earum dolorem cupiditate explicabo dolorum neque architecto, voluptatem vel temporibus distinctio quae vitae corporis reiciendis repellat autem, doloribus ut quidem rerum impedit obcaecati nulla natus, voluptates assumenda! Dignissimos, ad! Architecto incidunt deserunt perspiciatis eaque omnis! Alias perferendis debitis temporibus. Optio inventore natus nobis deleniti ullam amet ducimus! Repellendus commodi quae dolores, perferendis maxime accusamus deserunt officiis numquam. Nesciunt et voluptatibus tempora ab adipisci praesentium mollitia dicta impedit, facilis officia veritatis libero vel, blanditiis nisi debitis esse minima repudiandae, aliquam laborum. Aut praesentium placeat consequuntur non libero, aliquid temporibus quam vel, in ipsa possimus veniam deleniti sunt. Perspiciatis laboriosam delectus quasi autem quisquam tempore nulla facere harum impedit velit aspernatur quod corrupti, expedita similique incidunt dolorem quaerat earum itaque molestias ex ipsa obcaecati sequi. Voluptate quasi nisi fugit itaque, porro modi quibusdam esse, excepturi, recusandae vel ea rerum fuga expedita tempore debitis sint nesciunt repudiandae? Sit quibusdam ullam dolore aspernatur consequuntur quasi dolores similique perferendis eligendi, iure consequatur itaque molestiae impedit ipsam. Magni recusandae quia assumenda modi perspiciatis ex ipsa veniam quo, perferendis maxime tenetur accusantium. Numquam alias dolorem error aliquid. Aspernatur, temporibus.</p>
+    </div>
+    <button id="btn" onclick="hide()">Show/Hide</button>
+    <script>
+         let para=document.getElementById('para');
+         para.addEventListener('mouseover',function run(){
+             alert("You are inside box");
+            })
+            para.addEventListener("mouseout",function run(){
+                alert("You are outside box");
+            })
+            
+            function hide()
+        {
+           if( para.style.display!='none')
+           {
+            para.style.display='none';
+           }
+           else{
+            para.style.display='block';
+           }
+        }
+            </script>
+</body>
+</html>

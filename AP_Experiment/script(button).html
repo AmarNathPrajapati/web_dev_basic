@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script</title>
+    <style>
+        h1{
+            cursor: pointer;
+        }
+        h3{
+            width: 400px;
+            background-color: black;
+            color:white;
+            border:solid red 2px;
+            border-radius: 15px;
+            cursor: pointer;
+            padding-left: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>this is a button</h1>
+    <h3>Click for Submit form</h3>
+    <div id="name">
+        My Name is Amar Nath Prajapati
+    </div>
+    <!-- <form action="">
+        <input type="button" value="Click Me" onclick="myfunction()">
+    </form> -->
+    <script>
+        function myfunction(){
+            a[0].innerHTML="this is a text"
+        }
+        function myfunction1(){
+            c.innerHTML="My name is Chadan Prajapati"
+        }
+        function myfunction2(){
+            alert("Namskar");
+        }
+        function myfunction3(){
+            alert("Thanks");
+        }
+        function myfunction4(){
+            alert("Most Welcome");
+        }
+        function submit(){
+            alert("Thanks for Submitting Form")
+        }
+        a=document.getElementsByTagName("h1")
+        c=document.getElementById("name")
+        c.addEventListener("click",myfunction1)
+        // b=document.getElementsByTagName("h3")
+        // b[0].addEventListener("click",submit)
+
+        a[0].addEventListener("click",myfunction)
+        // a[0].addEventListener("click",myfunction1)
+        // a[0].addEventListener("click",myfunction2)
+        // a[0].addEventListener("click",myfunction3)
+        // a[0].addEventListener("click",myfunction4)
+    </script>
+</body>
+</html>

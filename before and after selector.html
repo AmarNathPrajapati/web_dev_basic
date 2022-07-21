@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after selector</title>
+    <style>
+        header::before{
+            background: url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center center/cover;
+            margin:0px;
+            content:"";
+            position: absolute;
+            top:0;
+            left:0;
+            height: 100%;
+            width:100%;
+            z-index: -1;
+            opacity: 0.5;
+
+        }
+        .container{
+            height:100vh;
+         }
+        li a{
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+            margin: 0px 20px;
+        }
+        ul{
+            display: flex;
+            font-size: 2em;
+        }
+        /* p::after{
+            content: "this is content after paragraph";
+            font-size: 20px;
+        }
+        p::before{
+            content:"this is content before paragraph";
+            font-size: 30px;
+        } */
+        p{
+            font-size: 30px;
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            font-size: 3rem;
+            margin:95px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header><ul class="box">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Services</a></li>
+        </header>
+        </ul>
+        <div class="box1"><h2>Welcome To Coding World!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nam necessitatibus voluptates distinctio ex in quos, cumque omnis at molestiae. Labore cupiditate, unde dolores quod, fuga delectus autem enim architecto, optio soluta voluptatem est.</p>
+    </div>
+</body>
+</html>

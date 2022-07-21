@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 500px;
+            border:2px solid rebeccapurple;
+            display: flex;
+            /* property of Flex Container */
+            /* flex-direction: row;
+            flex-wrap: wrap; */
+
+            flex-flow: row;
+            justify-content: center;
+            /* justify-content: space-around; */
+            align-items: stretch;
+            
+        }
+
+        .item{
+            width:100px;
+            height:100px;
+            background-color: coral;
+            margin:5px;
+            padding:15px;
+            border:2px solid blueviolet;
+        }
+        #item-1{
+            /* property of flex item */
+
+
+        }
+        #item-2{
+           align-self: center;
+        }
+        #item-3{
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item-1">First</div>
+        <div class="item" id="item-2">Second</div>
+        <div class="item" id="item-3">Third</div>
+    </div>
+</body>
+</html>

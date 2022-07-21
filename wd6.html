@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment No.6</title>
+    <style>
+        #ulid{
+            border:8px solid rgb(152, 231, 25);
+            font-size: 20px;
+            background-color: black;
+            color:white;
+            padding:20px 90px;
+            margin: 20px;
+        }
+        .olclass{
+            border:8px solid rgb(190, 25, 231);
+            font-size: 20px;
+            background-color: black;
+            color:white;
+            padding:20px 90px;
+            margin: 20px;
+        }
+        #ulid:hover{
+            font-size: 30px;
+            background-color: rgb(3, 62, 255);
+            color:white;
+            border:8px solid black;    
+        }
+        .olclass:hover{
+            font-size: 30px;
+            background-color: rgb(190, 25, 231);
+            color:white;
+            border:8px solid black;        
+        }
+        .tableclass{
+
+            border:8px solid red;
+            background-color: rgb(8, 241, 86);
+            font-size: 25px;
+            margin: 50px;
+        }
+        .tableclass:hover{
+            border:8px solid white;
+            background-color:black;
+            color:white;
+            font-size: 40px;
+            margin: 40px;
+        }
+        .content{
+            border: 10px solid rgb(46, 235, 8);
+            background-color: tomato;
+            font-size: 25px;
+            padding: 20px;
+        }
+        a{
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            width: 500px;
+            margin: 10px;
+        }
+        a:hover{
+            font-size: 30px;
+            color:blueviolet;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:tomato;
+            height: 80vh;
+            width:80vw;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height:200px;
+            transition:all 2s ease-in-out 5ms;
+        }
+        .box:hover{
+            transform: rotate(360deg) scale(2);
+            background-size: 100%;
+            background-repeat: no-repeat; 
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <h2>Subjects in IInd Semester</h2>
+        <ul id="ulid">
+            <li>Mathematics</li>
+            <li>Data Structure</li>
+            <li>Application Programming</li>
+            <li>Web Designing</li>
+            <li>Digital Electronics</li>
+            <li>Communication Skills</li>
+        </ul>
+        <h2>Semester Books(Author Name)</h2>
+        <ol class="olclass">
+            <li>Mathematics
+                <ol type="i">
+                    <li>Kreyszig</li>
+                    <li>Piskunov</li>
+                </ol>
+            </li>
+            <li>Data Structure
+                <ol type="i">
+                    <li>G.L. Tondo</li>
+                    <li>S.Sahni</li>
+                </ol>
+            </li>
+            <li>Digital Electronics
+                <ol type="i">
+                    <li>Morris Mano</li>
+                    <li>Prentice Hall</li>
+                </ol>
+            </li>
+            <li>Communication Skills
+                <ol type="i">
+                    <li>Krishna Swamv</li>
+                    <li>Orient Longman</li>
+                </ol>
+            </li>
+            <li>Web Designing
+                <ol type="i">
+                    <li>Thomas A powell</li>
+                    <li>Scott Guelich</li>
+                </ol>
+            </li>
+            <li>Application Programming
+                <ol type="i">
+                    <li>Goodman D</li>
+                    <li>Atkinson L.</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+    <div class="table">
+        <table class="tableclass" border="1"
+    cellpadding="30" cellspacing="5"  >
+        <tr>
+            <th>Name</th>
+            <th>Roll No.</th>
+            <th>Branch</th>
+            <th>Hobby</th>
+        </tr>
+        <tr>
+            <td>Amar Nath Prajapati</td>
+            <td>12011051</td>
+            <td>CSE</td>
+            <td>Coding</td>
+        </tr>
+        <tr>
+            <td>student 2</td>
+            <td>12012061</td>
+            <td>IT</td>
+            <td>Playing Indoor Game</td>
+        </tr>
+        <tr>
+            <td>Student 3</td>
+            <td>12011071</td>
+            <td>CSE</td>
+            <td>Innovative Farming</td>
+        </tr>
+        <tr>
+            <td>Student 4</td>
+            <td>12012071</td>
+            <td>IT</td>
+            <td>Writting Poem</td>
+        </tr>
+    </table>
+    </div>
+    <div class="content">
+        <!-- anchor tag -->
+    <div><a href="https://www.google.com" target="_blank">Go To Google </a>
+    </div>
+    <div><a href="project 1.html" target="_self">Go To My first html project</a></div>
+    <!-- img tag -->
+    <div class="container">
+        <div class="box">
+            <img src="https://wallpapercave.com/wp/wp2646303.jpg" width="400px" height="250px" alt="Prakritik Drishya"
+                title="Image of The Nature">
+        </div>
+    </div>
+    <!-- audio tag -->
+    <div>
+        <audio  controls loop width="500px">
+            <source src="Best Song.mp3">
+        </audio>
+    </div>
+    <iframe class="container"width="560" height="315" src="https://www.youtube.com/embed/uz2xLEE4mkk" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+    <!-- iframe tag -->
+</div>
+</body>
+</html>

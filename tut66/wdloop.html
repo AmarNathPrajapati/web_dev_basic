@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let i, j;
+        for (i = 1; i <= 10; i++) {
+            document.write(i + "<br>")
+            for (j = 1; j <= i; j++) { document.write(j); }
+        }
+
+
+        document.write("<br>");
+        let age = 20;
+        if (age >= 18 && age < 35) {
+            document.write("<br>" + "You are aligible for this Post for Age 20");
+        }
+        else {
+            document.write("<br>" + "You are not aligible for this Post for Age 20")
+        }
+
+        document.write("<br>");
+        let age1 = 15;
+        if (age1 < 10) {
+            document.write("<br>" + "You age is less 10");
+        }
+        else if (age1 > 10 && age1 < 20) {
+            document.write("<br>" + "You age is in between 10 and 20");
+        }
+        else
+        {
+            document.write("<br>" + "You age is in greater than 20");
+        }
+        
+
+        document.write("<br>");
+        document.write("<br>");
+        for (i = 0; i <= 100; i++) {
+            if (i % 2 == 0) {
+                document.write("the even number is:" + i + "<br>");
+            }
+            else {
+                document.write("the odd number is:" + i + "<br>");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

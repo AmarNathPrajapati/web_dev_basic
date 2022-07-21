@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+    <title>Practical Exam</title>
+    <style>
+        /* tag selector */
+        h2{
+            text-align: center;
+            border-radius: 20px;
+            margin:0px;
+            background-color: rgb(233, 142, 245);
+            font-size: 40px;
+        }
+        form p{
+            font-weight: bold;
+            margin:5px;
+        }
+        form{
+            text-align: center;
+            background-color: rgb(107, 247, 177);
+            border:solid black 4px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        /* class selector */
+        .container{
+            background-color: blue;
+            border:solid red 4px;
+            padding-left: 500px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        /* id selector */
+        #list{
+            background-color: rgb(227, 145, 243);
+            border:solid darkblue 4px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Scholarship Form</h2>
+
+    <form action="">
+        <p>Name</p>
+        <input type="text" placeholder="Enter Your Full Name">
+        <p>Father's Name</p>
+        <input type="text" placeholder="Enter Father's  Name">
+        <p>Mother's Name</p>
+        <input type="text" placeholder="Enter Mother's Name">
+        <p>E-mail Id</p>
+        <input type="email" placeholder="Enter E-mail Id">
+        <p>Password</p>
+        <input type="text" placeholder="Enter Password">
+        <p>Institute Name</p>
+        <input type="text" placeholder="Enter Institute  Name">
+        <p>Enter Your Permanent Address</p>
+        <textarea cols="30" rows="2" placeholder="Enter Permanent Address"></textarea>
+        <p>Gender</p>
+        <label for="male">Male</label><input type="radio" name="gender" id="male">
+        <label for="female">Female</label><input type="radio" name="gender" id="female">
+        <label for="other">Other</label><input type="radio" name="gender" id="other">
+        <p>Select Category</p>
+        <select name="category" id="">
+            <option value="a">General</option>
+            <option value="b">OBC</option>
+            <option value="c">SC</option>
+            <option value="d">ST</option>
+        </select>
+        <p>Select Family Income</p>
+        <select name="income" >
+            <option value="a">More than 5 lacs</option>
+            <option value="b">Between 1 lacs to 5 lacs</option>
+            <option value="c">Below 1 lacs</option>
+        </select>
+        <p>Upload Required Document</p>
+        <input type="file"><br><br>
+        <input type="submit">
+        <input type="reset" >
+    </form>
+
+    <div class="container">
+        <table border="1" cellpadding="20" cellspacing="0" bgcolor="yellow">
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+            </tr>
+            <tr>
+                <td>a1</td>
+                <td>a2</td>
+                <td>a3</td>
+                <td>a4</td>
+            </tr>
+            <tr>
+                <td>b1</td>
+                <td>b2</td>
+                <td>b3</td>
+                <td>b4</td>
+            </tr>
+            <tr>
+                <td>c1</td>
+                <td>c2</td>
+                <td>c3</td>
+                <td>c4</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="list">
+        <ul>
+            <li>this is comment NO.01</li>
+            <li>this is comment NO.02</li>
+            <li>this is comment NO.03</li>
+            <li>this is comment NO.04</li>
+            <li>this is comment NO.05</li>
+        </ul>
+        <ol type="i" start="5">
+            <li>this is comment in ol tag  #comment No.01</li>
+            <li>this is comment in ol tag  #comment No.02</li>
+            <li>this is comment in ol tag  #comment No.03</li>
+            <li>this is comment in ol tag  #comment No.04</li>
+            <li>this is comment in ol tag  #comment No.05</li>
+        </ol>
+    </div>
+
+</body>
+</html>

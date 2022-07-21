@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     initi<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,al-scale=1.0">
+    <title>more on selectors</title>
+    <style>
+        div{
+            background-color: black;
+            color: white
+        }
+        div p{
+            background-color: turquoise;
+            color: red;
+            font-size: 20px;
+        }
+        div li{
+
+            background-color: yellow;
+            color:black;
+            font-size: 25px;
+        }
+        div h2{
+            background-color: tomato;
+            color:black;
+            font-size: 50px;
+        }
+        div > p{
+            background-color: mediumspringgreen;
+            font-size: 20px;
+        }
+        div li p{
+            background-color: orchid;
+            color:black;
+        }
+        div ul p{
+            background-color: rgb(47, 17, 214);
+            color:black;
+        }
+        div+p{
+            background-color: blue;
+            font-size: 30px;
+        }
+        h3{
+            background-color: palevioletred;
+            font-size: 25px;
+        }
+        input[type='text']
+        {
+            background-color: brown;
+            font-size: 20px;
+        }
+        a[target='_blank']{
+            width:50px;
+            margin: auto;
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" name="asd" id="asd">
+        <h2>this is the heading</h2>
+        <p>this is first paragraph</p>
+        <div class="box">
+            <p>this is second paragraph</p>
+            <ul>
+                <li>this the first list</li>
+                <li>this is the second list</li>
+                <li>this is the second list</li>
+                <li>this is the second list</li>
+                <li>this is the second list</li>
+                <li>this is the second list</li>
+                <li>this is the second list</li>
+                <li>this is the second list</li>
+                <li>
+                    <p>this is six paragraph</p>
+                </li>
+            </ul>
+            <p>this is third paragraph</p>
+        </div>
+        <a href="https://www.google.com" target="_blank">Go to Google</a>
+        <ul>
+        <p>this is fourth paragraph</p>
+        </ul>
+    </div>
+    <p>this is fifth paragraph</p>
+    <h3>this is the second heading</h3>
+    
+</body>
+</html>

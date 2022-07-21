@@ -1,0 +1,24 @@
+body{
+    background-image: url(https://upload.wikimedia.org/wikipedia/en/0/00/Indian_Institute_of_Information_Technology%2C_Sonepat_logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 450px ;
+    background-color: rgb(171 143 244);
+}
+div{
+    background-color: #85fb97;
+    width: 500px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+p{
+background-color: black;
+color:white;
+height: 30px;
+padding-top: 15px;
+border-radius: 20px;
+}
+p input{
+float:right;
+margin-right: 15px;
+}

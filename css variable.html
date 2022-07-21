@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variable/custom properties</title>
+    <style>
+        :root{
+            /* these are global variables */
+            --primary-color:rgb(174, 0, 255);
+            --secondary-color:blue;
+            --maxh:500px;
+
+        }
+        .box{
+            --color1:rgb(174, 0, 255);
+            width:100px;
+            height:100px;
+            background-color: var(  --secondary-color) ;
+            border:2px solid var( --primary-color);
+            margin: 2px 10px;
+            box-shadow: 4px 5px 5px var( --secondary-color);
+
+        }
+        .container{
+            /* --color1:rgb(174, 0, 255); */
+            background-color: var(--primary-color);
+            display: flex;
+            height: var(--maxh);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

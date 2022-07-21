@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css media query</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 12px;
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer' 
+        }
+        .box{
+            background-color: rgb(43, 226, 171);
+            border:2px solid black;
+            padding:15px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+        @media only screen and (max-width:300px)
+        {
+            body{
+                background-color: red;
+            }
+            .container{
+            display: grid;
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'footer footer footer footer' 
+            }
+            #aside{
+                display: none;
+            }
+        }
+      
+        @media(min-width:300px) and (max-width:500px)
+        {
+            body{
+                background-color: yellow;
+            }
+            .container{
+            display: grid;
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'footer footer footer footer' 
+            }
+            #aside{
+                display: none;
+            }
+        }
+      
+        @media(min-width:500px) and (max-width:800px)
+        {
+            body{
+                background-color: green;
+            }
+            .container{
+            display: grid;
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer' 
+            }
+
+        }
+      
+        @media(min-width:800px)
+        {
+            body{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="box">
+                Home About Contact Us Services
+        </div>
+        <div class="box" id="section">
+            <h2>learn Css in Hindi</h2>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut inventore nulla harum obcaecati consequatur sed eligendi laborum, voluptatibus omnis officia ipsa iure quia eius, in sunt eos eveniet non! Dolores veniam voluptatum cumque corrupti doloremque numquam unde, ipsum praesentium eaque non laudantium doloribus vero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ex molestiae perspiciatis veniam, accusamus ut eum assumenda eveniet, temporibus nam nisi explicabo asperiores cupiditate quos voluptatem eligendi incidunt dolore nemo in amet sunt ea? Odit beatae nisi optio debitis rerum itaque nesciunt, mollitia reprehenderit alias ex facere, voluptatibus eum praesentium porro dolor hic ut. Enim laudantium rem voluptate praesentium, amet tempore earum esse quisquam dolorem facere exercitationem. Cumque temporibus repellat eveniet adipisci minima blanditiis vero cupiditate recusandae minus velit aspernatur, expedita hic, ipsa eligendi at commodi accusantium! Delectus commodi error itaque ab vel quibusdam architecto velit modi distinctio necessitatibus. Explicabo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ratione eum numquam magnam cum necessitatibus debitis veritatis error quae totam vel nemo omnis dolor dolores qui laudantium sit, magni, fuga quasi hic fugit, veniam aperiam! Unde velit nostrum excepturi quidem illum perspiciatis neque. Accusantium adipisci fugiat amet debitis quasi, incidunt exercitationem quis molestiae eum illum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, perferendis?Lorem ipsum dolor sit amet.
+        </div>
+        <div class="box" id="aside">
+            <h3>more about us</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus maxime perferendis quasi saepe? Aliquid quod doloremque at quidem beatae reiciendis totam sunt illo ut labore deserunt ex iste enim, blanditiis eum impedit. Impedit, tempore.
+        </div>
+        <footer class="box">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorem non dolor?
+        </footer>
+    </div>
+</body>
+</html>

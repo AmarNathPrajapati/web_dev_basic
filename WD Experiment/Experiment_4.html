@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment No.04_form</title>
+    <style>
+        p{
+            font-weight: bold;
+            margin:5px;
+        }
+        form{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Schorlarship Form</h2>
+    <form action="">
+        <p>Name</p>
+        <input type="text" placeholder="Enter Your Full Name">
+        <p>Father's Name</p>
+        <input type="text" placeholder="Enter Father's  Name">
+        <p>Mother's Name</p>
+        <input type="text" placeholder="Enter Mother's Name">
+        <p>E-mail Id</p>
+        <input type="email" placeholder="Enter E-mail Id">
+        <p>Password</p>
+        <input type="text" placeholder="Enter Password">
+        <p>Institute Name</p>
+        <input type="text" placeholder="Enter Institute  Name">
+        <p>Enter Yout Permanent Address</p>
+        <textarea name="" id="" cols="30" rows="2" placeholder="Enter Permanent Address"></textarea>
+        <p>Gender</p>
+        <label for="male">Male</label><input type="radio" name="gender" id="male">
+        <label for="female">Female</label><input type="radio" name="gender" id="female">
+        <label for="other">Other</label><input type="radio" name="gender" id="other">
+        <p>Select Category</p>
+        <select name="category" id="">
+            <option value="a">General</option>
+            <option value="b">OBC</option>
+            <option value="c">SC</option>
+            <option value="d">ST</option>
+        </select>
+        <p>Select Family Income</p>
+        <select name="income" id="">
+            <option value="a">More than 5 lacs</option>
+            <option value="b">Between 1 lacs to 5 lacs</option>
+            <option value="c">Below 1 lacs</option>
+        </select>
+        <p>Upload Required Document</p>
+        <input type="file">
+        <br>
+        <input type="submit">
+        <input type="reset" name="" id="">
+        
+    </form>
+</body>
+</html>

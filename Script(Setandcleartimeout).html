@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set and clear time out</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="time"></h1>
+        <p id="para">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit ex dolorem, laboriosam nemo velit alias soluta quisquam. Eos animi esse nam quaerat reiciendis dignissimos totam vero commodi explicabo ex quod voluptates, excepturi sit quidem, eaque sunt, rem soluta debitis mollitia beatae architecto numquam iste itaque? Ut expedita illo officiis, asperiores suscipit molestias incidunt tempore eveniet?
+        </p>
+    </div>
+    <script>
+        function greet(name,byetext)
+        {
+            console.log("Good Morning "+name+" "+byetext)
+        }
+        // setTimeout(greet,5000,"Amar","Take Care");
+
+        // let timeout = setTimeout(greet,5000,"Amar","Take Care");
+        // console.log(timeout)
+        // clearTimeout(timeout)
+
+        // setInterval(greet,1000,"Amar","Takecare")
+
+        // let intervalId=setInterval(greet,1000,"Amar","Takecare")
+        // console.log(intervalId)
+        // clearInterval(intervalId)
+
+        function displaytime(){
+            let time=new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML="Time Now "+time;
+        }
+        setInterval(displaytime,1000)
+
+    </script>
+</body>
+</html>

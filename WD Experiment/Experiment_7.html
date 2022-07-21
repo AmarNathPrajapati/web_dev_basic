@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment No.07</title>
+</head>
+<body>
+    <script>
+        // let i;
+        // for(i=0;i<=100;i++){
+        //     if(i%2==0){
+        //         document.write(i+"is even number <br>")
+        //     }
+        //     else{
+        //         document.write(i+"is odd number <br>")
+        //     }
+        // }
+
+        let i,j;
+        for(i=1;i<=10;i++){
+            for(j=1;j<=i;j++){
+                document.write(j)
+            }
+            document.write("<br>")
+        }
+
+        let per=parseInt(prompt("Enter Your Percentage"))
+        if(per>90 && per<=100){
+            document.write("You obtained Grade-A")
+        }
+        else if(per>80 && per<=90){
+            document.write("You obtained Grade-B")
+        }
+        else if(per>70 && per<=80){
+            document.write("You obtained Grade-C")
+        }
+        else if(per>60 && per<=70){
+            document.write("You obtained Grade-D")
+        }
+        else if(per>50 && per<=60){
+            document.write("You obtained Grade-E")
+        }
+        else{
+            document.write("You obtained Grade-F")   
+        }
+    </script>
+</body>
+</html>

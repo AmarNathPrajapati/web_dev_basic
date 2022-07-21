@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear</title>
+</head>
+<style>
+    .container{
+        width:900px;
+        border:2px solid rgb(243, 20, 150);
+        /* backgr ound-color: darkviolet; */
+        margin: 50px auto;
+    }
+    .item{
+        
+        border:2px solid black;
+        margin:12px 3px;
+        padding:12px 3px;
+        background-color: darkturquoise;
+    }
+    #fruit{
+        float: left;
+        width:48%;
+    }
+    #comp{
+        float: right;
+        width:48%;
+    }
+    #stat{
+        clear: left;
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="fruit" class="item">
+            <h2>fruits</h2>
+            <p id="fpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et tempora quis sit, temporibus dolorem ab, maxime minima blanditiis, non ducimus? Quos nam aliquam vitae error, explicabo itaque veritatis hic saepe quibusdam est eos!
+            </p>
+        </div>
+        <div id="comp" class="item">
+            <h2>computer</h2>
+            <p id="cpara" class="para" >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et tempora quis sit, temporibus dolorem ab, maxime minima blanditiis, non ducimus? Quos nam aliquam vitae error, explicabo itaque veritatis hic saepe quibusdam est eos!
+            </p>
+        </div>
+        <div id="stat" class="item">
+            <h2>stationary</h2>
+            <p id="spara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et tempora quis sit, temporibus dolorem ab, maxime minima blanditiis, non ducimus? Quos nam aliquam vitae error, explicabo itaque veritatis hic saepe quibusdam est eos!
+            </p>
+        </div>
+    </div>
+</body>
+</html>
